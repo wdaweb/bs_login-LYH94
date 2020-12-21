@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LogIn</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <style>
+    body {
+      background: url("https://picsum.photos/1920/1080/?random=1") no-repeat fixed center/cover;
+    }
+
+    .container {
+      width: 30%;
+      height: 70%;
+      padding: 5%;
+      position: relative;
+    }
+
+    .photo {
+      width: 20%;
+      height: 20%;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: -10%;
+      background: rgba(0, 123, 255, 0.5);
+      transform: translate(-50%);
+    }
+
+    .fauser {
+      font-size: 2.5rem;
+      position: absolute;
+      left: 25%;
+      top: 25%;
+      transform: translate(-25%);
+    }
+
+    .form-group {
+      position: relative;
+    }
+
+    i {
+      position: absolute;
+      top: 25%;
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+
+<body class="d-flex align-items-center justify-content-center vh-100">
+  <div class="container align-items-center justify-content-center d-flex"
+    style="background-color: rgba(255, 255, 255, 0.3); border-radius: 5%;">
+    <form class="w-100">
+      <!-- user icon -->
+      <div class="photo text-white text-center"><i class="far fa-user fauser"></i>
+      </div>
+      <h2 class="text-center mb-4" style="color: rgb(150, 150, 150);">Sign In</h2>
+      <!-- Username -->
+      <div class="form-group">
+        <i class="fas fa-user pl-2" style="color: rgb(150, 150, 150);"></i>
+        <input type="text" class="form-control pl-4" placeholder="Username">
+      </div>
+      <!-- Password -->
+      <div class="form-group">
+        <i class="fas fa-lock pl-2" style="color: rgb(150, 150, 150);"></i>
+        <input type="password" class="form-control pl-4" placeholder="Password">
+      </div>
+      <!-- Login -->
+      <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+      <!-- Remember me/Forget password?-->
+      <div class="form-group form-check mt-3 text-white">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <small><label class="form-check-label" for="exampleCheck1">Remember me</label></small>
+        <small class="float-right"><a href="" class="text-white">Forget password?</a></small>
+      </div>
+    </form>
+  </div>
+
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
